@@ -9,7 +9,7 @@ using MusicApp.API.Data;
 
 namespace MusicApp.API.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
