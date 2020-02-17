@@ -1,0 +1,37 @@
+[
+    {
+      "Username": "Debra",
+      "Password": "password",
+      "KnownAs": "Debra",
+      "Created": "2017-01-20",
+      "LastActive": "2017-01-20"
+    },
+    {
+      "Username": "Francis",
+      "Password": "password",
+      "KnownAs": "Francis",
+      "Created": "2017-04-07",
+      "LastActive": "2017-04-07"
+    },
+    {
+      "Username": "Jack",
+      "Password": "password",
+      "KnownAs": "Jack",
+      "Created": "2017-06-23",
+      "LastActive": "2017-06-23"
+    },
+    {
+      "Username": "Nola",
+      "Password": "password",
+      "KnownAs": "Nola",
+      "Created": "2017-03-29",
+      "LastActive": "2017-03-29"
+    },
+    {
+      "Username": "John",
+      "Password": "password",
+      "KnownAs": "John",
+      "Created": "2017-06-16",
+      "LastActive": "2017-06-16"
+    }
+  ]

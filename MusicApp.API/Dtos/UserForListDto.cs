@@ -1,13 +1,11 @@
 using System;
 
-namespace MusicApp.API.Models
+namespace MusicApp.API.Dtos
 {
-    public class User
+    public class UserForListDto
     {
         public int Id { get; set; }
         public string Username { get; set; }
-        public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; }
         public string KnownAs {get; set;}
         public DateTime Created {get; set;}
         public DateTime LastActive {get; set;}
