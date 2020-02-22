@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   registerMode = false;
+  learnMoreMode = false;
 
   constructor(private http: HttpClient) { }
 
@@ -16,6 +17,10 @@ export class HomeComponent implements OnInit {
 
   registerToggle() {
     this.registerMode = true;
+  }
+
+  learnMoreToggle() {
+    this.learnMoreMode = true;
   }
 
 

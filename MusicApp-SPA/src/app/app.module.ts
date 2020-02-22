@@ -29,7 +29,7 @@ export function tokenGetter() {
       RegisterComponent,
       MessagesComponent,
       LessonsComponent,
-      PaymentComponent
+      PaymentComponent,
    ],
    imports: [
       BrowserModule,
