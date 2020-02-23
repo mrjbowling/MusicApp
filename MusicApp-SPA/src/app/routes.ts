@@ -6,6 +6,8 @@ import { PaymentComponent } from './payment/payment.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { StudentsComponent } from './student/students/students.component';
 import { StudentDetailsComponent } from './student/student-details/student-details.component';
+import { StudentEditComponent } from './student/student-edit/student-edit.component';
+import { StudentEditResolver } from './resolvers/student-edit.resolver';
 
 export const appRoutes: Routes = [
     {path: '', component: HomeComponent},
@@ -19,6 +21,7 @@ export const appRoutes: Routes = [
             {path: 'payment', component: PaymentComponent},
             {path: 'students', component: StudentsComponent},
             {path: 'students/:id', component: StudentDetailsComponent},
+            {path: 'student/edit', component: StudentEditComponent, resolve: {user: StudentEditResolver}},
         ]
     },
       {path: '**', redirectTo: '', pathMatch: 'full'},

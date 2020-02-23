@@ -18,6 +18,8 @@ import { LessonsComponent } from './lessons/lessons.component';
 import { PaymentComponent } from './payment/payment.component';
 import { StudentsComponent } from './student/students/students.component';
 import { StudentDetailsComponent } from './student/student-details/student-details.component';
+import { StudentEditComponent } from './student/student-edit/student-edit.component';
+import { StudentEditResolver } from './resolvers/student-edit.resolver';
 
 export function tokenGetter() {
    return localStorage.getItem('token');
@@ -33,7 +35,8 @@ export function tokenGetter() {
       LessonsComponent,
       PaymentComponent,
       StudentsComponent,
-      StudentDetailsComponent
+      StudentDetailsComponent,
+      StudentEditComponent
 
    ],
    imports: [
@@ -52,7 +55,8 @@ export function tokenGetter() {
    ],
    providers: [
       AuthService,
-      ErrorInterceptorProvider
+      ErrorInterceptorProvider,
+      StudentEditResolver
    ],
    bootstrap: [
       AppComponent
