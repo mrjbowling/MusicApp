@@ -16,8 +16,8 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 import { LessonsComponent } from './lessons/lessons.component';
 import { PaymentComponent } from './payment/payment.component';
-import { StudentsComponent } from './students/students.component';
-import { StudentDetailsComponent } from './student-details/student-details.component';
+import { StudentsComponent } from './student/students/students.component';
+import { StudentDetailsComponent } from './student/student-details/student-details.component';
 
 export function tokenGetter() {
    return localStorage.getItem('token');

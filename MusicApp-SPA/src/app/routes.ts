@@ -4,8 +4,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { LessonsComponent } from './lessons/lessons.component';
 import { PaymentComponent } from './payment/payment.component';
 import { AuthGuard } from './_guards/auth.guard';
-import { StudentsComponent } from './students/students.component';
-import { StudentDetailsComponent } from './student-details/student-details.component';
+import { StudentsComponent } from './student/students/students.component';
+import { StudentDetailsComponent } from './student/student-details/student-details.component';
 
 export const appRoutes: Routes = [
     {path: '', component: HomeComponent},
