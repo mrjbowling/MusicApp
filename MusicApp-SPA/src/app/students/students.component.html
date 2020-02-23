@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Known As</th>
+        <th scope="col">Username</th>
+        <th scope="col">Last Active</th>
+        <th scope="col">Created Date</th>
+      </tr>
+    </thead>
+  <ng-container *ngFor="let user of users">
+      <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.knownAs}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.lastActive}}</td>
+        <td>{{user.created}}</td>
+      </tr>
+  </ng-container>
+</table>
+</div>
+  
+  

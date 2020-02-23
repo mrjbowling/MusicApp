@@ -16,6 +16,8 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 import { LessonsComponent } from './lessons/lessons.component';
 import { PaymentComponent } from './payment/payment.component';
+import { StudentsComponent } from './students/students.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 export function tokenGetter() {
    return localStorage.getItem('token');
@@ -30,6 +32,9 @@ export function tokenGetter() {
       MessagesComponent,
       LessonsComponent,
       PaymentComponent,
+      StudentsComponent,
+      StudentDetailsComponent
+
    ],
    imports: [
       BrowserModule,
