@@ -20,6 +20,7 @@ import { StudentsComponent } from './student/students/students.component';
 import { StudentDetailsComponent } from './student/student-details/student-details.component';
 import { StudentEditComponent } from './student/student-edit/student-edit.component';
 import { StudentEditResolver } from './resolvers/student-edit.resolver';
+import { PreventUnsavedChanges } from './_guards/prevent_unsaved_changes.guard';
 
 export function tokenGetter() {
    return localStorage.getItem('token');
@@ -56,7 +57,8 @@ export function tokenGetter() {
    providers: [
       AuthService,
       ErrorInterceptorProvider,
-      StudentEditResolver
+      StudentEditResolver,
+      PreventUnsavedChanges
    ],
    bootstrap: [
       AppComponent
