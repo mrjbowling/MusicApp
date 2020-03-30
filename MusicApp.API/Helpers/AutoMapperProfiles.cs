@@ -10,6 +10,8 @@ namespace MusicApp.API.Helpers
         {
             CreateMap<User, UserForListDto>();
             CreateMap<UserForUpdateDto, User>();
+            CreateMap<User, UserForDetailedDto>();
+            CreateMap<UserForRegisterDto, User>();
         }
     }
 }
