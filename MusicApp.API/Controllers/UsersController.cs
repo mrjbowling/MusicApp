@@ -7,11 +7,14 @@ using MusicApp.API.Dtos;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System;
+using MusicApp.API.Helpers;
 
 namespace MusicApp.API.Controllers
 {
+    [ServiceFilter(typeof(LogUserActivity))]
     [Authorize]
     [Route("api/[controller]")]
+    [ApiController]
     public class UsersController : ControllerBase
     {
         private readonly IMusicRepository _repo;

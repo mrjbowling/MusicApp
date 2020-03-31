@@ -14,8 +14,8 @@
         <td>{{user.id}}</td>
         <td>{{user.knownAs}}</td>
         <td>{{user.username}}</td>
-        <td>{{user.lastActive}}</td>
-        <td>{{user.created}}</td>
+        <td>{{user.lastActive | date: 'medium'}}</td>
+        <td>{{user.created | date: 'mediumDate'}}</td>
       </tr>
   </ng-container>
 </table>
